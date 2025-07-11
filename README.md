@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 📸 Unsplash Image Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and dynamic image gallery built with **React** and the **Unsplash API**, supporting category-based filtering, lazy loading, keyboard navigation, and lightbox previews.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+👉 [View Live Site](https://niteshsharma9889.github.io/unsplash-gallery) (Currently demo not working)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- 🔍 Fetches images from Unsplash using Axios
+- 🗂️ Category and tag-based filtering
+- 📷 Lightbox modal with keyboard navigation
+- 🚀 Lazy loading for performance
+- 🌙 Dark mode toggle *(optional)*
+- ⚙️ `.env` support for API key security
+- 📱 Fully responsive on all screen sizes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category        | Tools Used                             |
+|-----------------|-----------------------------------------|
+| **Frontend**    | React, HTML5, CSS3, JavaScript (ES6+)   |
+| **HTTP Client** | Axios                                   |
+| **API**         | [Unsplash Developer API](https://unsplash.com/developers) |
+| **Deployment**  | GitHub Pages *(CI-ready)*               |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Installation
 
-### `npm run eject`
+1. **Clone the repository**
+```bash
+git clone https://github.com/niteshsharma9889/unsplash-gallery.git
+cd unsplash-gallery
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
+Set up your Unsplash API key
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a .env file in the root directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+REACT_APP_UNSPLASH_ACCESS_KEY="your_access_key_here"
+🔒 Note: Never commit .env files to GitHub.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the development server
 
-## Learn More
+npm start
+🧪 Scripts
+Command	Description
+npm start	Launches dev server on localhost:3000
+npm run build	Builds production-ready React app
+npm run deploy	Deploys to GitHub Pages (if configured)
+📁 Folder Structure
+src/
+├── components/
+│   ├── Gallery.js
+│   ├── ImageModal.js
+│   └── FilterBar.js
+├── App.js
+├── index.js
+└── styles/
+    └── App.css
+📌 Deployment
+This app is deployed on GitHub Pages. To redeploy:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run build
+npm run deploy
+🧠 Credits
+Built by Nitesh Sharma
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Powered by Unsplash API
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 License
+This project is open-source under the MIT License.
