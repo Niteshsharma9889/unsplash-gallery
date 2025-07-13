@@ -1,1 +1,1 @@
-18.18.2
+echo "20.11.1" > .node-version
